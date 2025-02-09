@@ -1,0 +1,22 @@
+
+public class AccountTest {
+	
+	public static void main(String[] args) {
+		
+			
+		Account account1 = new Account("Alex");
+		Account account2 = new Account("Adam");
+		
+		System.out.println(account1);
+		
+		account1.setName("Sam");
+		account1.equals(account2);
+		
+		if("Hi".equals("Hello")) {
+			
+		}
+		
+		
+	}
+
+}

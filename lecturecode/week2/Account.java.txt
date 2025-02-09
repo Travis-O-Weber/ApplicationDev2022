@@ -1,0 +1,66 @@
+/**
+ * This is a demo class for week 2 to represent an account
+ * 
+ * @author CS Class
+ * 
+ * Date
+ *
+ */
+public class Account {
+	
+	private String name;
+	private double balance;
+	
+	public Account(String newName ) {
+		this.name = newName;
+	}
+	
+	public Account(String newName, double startBalance ) {
+		this.name = newName;
+		this.balance = startBalance;
+	}
+	
+	
+	public boolean equals(Account otherAccount) {
+		return this.name.equals(otherAccount.getName());
+		
+	}
+	
+	/**
+	 * 
+	 * @param otherName: 
+	 */
+	public void setName(String otherName) {		
+		this.name = otherName;		
+	}
+	
+	
+	/**
+	 * 
+	 * @return
+	 */
+	public String getName() {
+		return this.name;
+	}
+	
+	public String toString() {
+		return "This account belongs to " + this.name ;
+	}
+
+	/**
+	 * 
+	 * @return double balance
+	 */
+	public double getBalance() {
+		return balance;
+	}
+
+	/**
+	 * 
+	 * @param balance
+	 */
+	public void setBalance(double balance) {
+		this.balance = balance;
+	}
+
+}
